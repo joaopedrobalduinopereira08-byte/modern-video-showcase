@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, Cpu, Lightbulb, Clock } from "lucide-react";
-import arte from "@/assets/renda_ia_arte.jpg.asset.json";
 
 const LINK = "https://go.hotmart.com/X108292328M?dp=1";
 
@@ -58,18 +57,17 @@ function Index() {
         </div>
       </header>
 
-      <section className="bg-hero relative px-5 pt-28 pb-16">
-        <div className="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-2">
-          <div className="fade-up">
-            <h1 className="text-4xl font-black uppercase leading-[1.05] sm:text-6xl">
-              Transforme <span className="text-gradient">IA</span> em oportunidades <span className="text-gradient">de renda</span>
-            </h1>
-            <p className="mt-6 max-w-md text-lg text-muted-foreground">
-              Aprenda a usar a <span className="font-semibold text-primary-glow">inteligência artificial</span> para explorar novas possibilidades no digital.
-            </p>
-            <div className="mt-8"><Cta>Quero conhecer o curso</Cta></div>
+      <section className="bg-hero relative px-5 pt-32 pb-24">
+        <div className="mx-auto max-w-4xl text-center fade-up">
+          <h1 className="text-5xl font-black uppercase leading-[1.05] sm:text-7xl">
+            Transforme <span className="text-gradient">IA</span> em oportunidades <span className="text-gradient">de renda</span>
+          </h1>
+          <p className="mx-auto mt-7 max-w-2xl text-lg text-muted-foreground sm:text-xl">
+            Aprenda a usar a <span className="font-semibold text-primary-glow">inteligência artificial</span> para explorar novas possibilidades no digital.
+          </p>
+          <div className="mt-10 flex justify-center">
+            <Cta big>Quero conhecer o curso</Cta>
           </div>
-          <img src={arte.url} alt="Renda IA" className="fade-up w-full rounded-3xl border border-border shadow-glow" />
         </div>
       </section>
 
