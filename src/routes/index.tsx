@@ -3,7 +3,7 @@ import { ArrowRight, Cpu, Lightbulb, Clock, Play } from "lucide-react";
 import arte from "@/assets/renda_ia_arte.jpg.asset.json";
 import robo from "@/assets/robo_xadrez.jpg.asset.json";
 
-const LINK = "https://go.hotmart.com/X108292328M?dp=1";
+const LINK = "https://go.hotmart.com/X108292328M";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -89,14 +89,14 @@ function Index() {
       <section id="video" className="px-5 py-16">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-black uppercase sm:text-4xl">A IA está <span className="text-gradient">transformando o mercado</span></h2>
-          <a href={LINK} target="_blank" rel="noopener noreferrer" className="group relative mt-8 block overflow-hidden rounded-3xl border border-border shadow-glow">
+          <div className="group relative mt-8 block overflow-hidden rounded-3xl border border-border shadow-glow">
             <img src={robo.url} alt="Robô jogando xadrez contra um homem" className="aspect-video w-full object-cover transition duration-700 group-hover:scale-105" />
             <span className="absolute inset-0 grid place-items-center bg-background/30">
               <span className="grid size-20 place-items-center rounded-full bg-primary/80 shadow-glow transition group-hover:scale-110">
                 <Play className="size-8 fill-foreground text-foreground" />
               </span>
             </span>
-          </a>
+          </div>
         </div>
       </section>
 
